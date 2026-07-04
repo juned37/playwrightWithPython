@@ -11,7 +11,7 @@ def test_e2e_web_api_Framework(playwright: Playwright) -> None:
     page = context.new_page()
 
     #reading data from json file
-    with open("playwright/data/credentials.json") as f:
+    with open("data/credentials.json") as f:
         data = json.load(f)
         print(data)
 

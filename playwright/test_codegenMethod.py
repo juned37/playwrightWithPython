@@ -21,7 +21,8 @@ def test_codegen_generatedFlow(playwright: Playwright) -> None:
     #page.set_viewport_size({"width": 500, "height": 500})
     page.get_by_text("Place Order").click()
     page.get_by_role("button", name="ORDERS").click()
-    page.get_by_role("button", name="Delete").click()
+    #page.get_by_role("button", name="Delete")[1].click()
+    page.click("(//button[text()='Delete'])[1]")
 
 ################ to generate code using playwright codegen command in terminal ##################
 # playwright codegen https://rahulshettyacademy.com/client/#/auth/login

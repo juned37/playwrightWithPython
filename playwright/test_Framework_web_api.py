@@ -3,7 +3,7 @@ import time , pytest
 
 from playwright.sync_api import Page, Playwright, expect
 
-from utils.test_api_utils import APIUTILS
+from utils.test_api_utils_Framework import APIUTILS
 from PageObjects.login import LoginPage
 from PageObjects.dashboard import DashboardPage
 from PageObjects.orderhistory import OrderHistoryPage
